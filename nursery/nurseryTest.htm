@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Car-rang-gel Sanctuary Nursery</title>
+     <style>
+         /* --- General & Typography --- */
+         body {
+             font-family: Arial, Helvetica, sans-serif;
+             margin: 0;
+             color: #333;
+             background-color: #FFFFFF;
+         }
+
+         .container {
+             max-width: 1100px;
+             margin: 0 auto;
+             padding: 1rem;
+         }
+
+         h1, h2, h3 {
+             color: #000066;
+             font-family: Arial, Helvetica, sans-serif;
+         }
+
+         h1 { font-size: 2rem; }
+         h2 { font-size: 1.75rem; color: #008000; margin-top: 2.5rem;}
+         h3 { font-size: 1.5rem; }
+
+         p {
+             line-height: 1.6;
+         }
+
+         a {
+             color: #000066;
+             text-decoration: none;
+         }
+
+         a:hover {
+             text-decoration: underline;
+         }
+
+         img {
+             max-width: 100%;
+             height: auto;
+             border-radius: 4px;
+         }
+
+         /* --- Header --- */
+         .site-header {
+             display: flex;
+             justify-content: space-between;
+             align-items: center;
+             flex-wrap: wrap;
+             gap: 1rem;
+             padding: 1rem 0;
+             border-bottom: 1px solid #ddd;
+         }
+         .header-info {
+             font-size: 0.9rem;
+             color: #000066;
+         }
+         .header-info strong {
+             font-size: 1.2rem;
+         }
+         .header-title {
+             text-align: right;
+         }
+
+         /* --- Navigation (Applied to both Top and Bottom Nav) --- */
+         .main-nav, .footer-nav {
+             background-color: #BBDDFF;
+             padding: 0.75rem 0;
+         }
+         .main-nav ul, .footer-nav ul {
+             display: flex;
+             flex-wrap: wrap;
+             justify-content: center;
+             list-style: none;
+             margin: 0;
+             padding: 0;
+             gap: 1rem 1.5rem; /* Row and column gap */
+         }
+         .main-nav a, .footer-nav a {
+             font-weight: bold;
+             font-size: 0.9rem;
+         }
+         
+         .main-nav a:active, .footer-nav a:active {
+            color: #6A5ACD; /* purple-blue for visited links */
+         }
+
+
+         /* --- Main Content & Sections --- */
+         main {
+             padding: 1rem 0;
+         }
+
+         .content-grid, .flex-container {
+             display: flex;
+             gap: 2rem;
+             flex-wrap: wrap;
+             margin-top: 1rem;
+         }
+
+         .flex-container > * {
+              flex: 1;
+              min-width: 300px;
+         }
+
+         .index-list a {
+             display: block;
+             margin-bottom: 0.5rem;
+         }
+
+         figure {
+             margin: 0;
+             text-align: center;
+         }
+
+         figcaption {
+             font-size: 0.9rem;
+             color: #555;
+             margin-top: 0.5rem;
+             font-style: italic;
+         }
+
+         .task-list {
+             padding-left: 1.5rem;
+         }
+
+         .image-gallery {
+             display: grid;
+             grid-template-columns: repeat(2, 1fr); /* Creates two equal-width columns */
+             gap: 1.5rem;
+             margin-top: 1rem;
+         }
+
+         @media (max-width: 768px) {
+             .image-gallery {
+                 grid-template-columns: 1fr; /* On smaller screens, stack images */
+             }
+         }
+
+         .plant-list {
+             list-style: none;
+             padding: 0;
+             column-count: 4;
+             column-gap: 2rem;
+         }
+         .plant-list li {
+             margin-bottom: 0.5rem;
+         }
+
+         /* --- Footer --- */
+         .site-footer {
+             margin-top: 2rem;
+             padding-top: 1rem;
+             border-top: 1px solid #ddd;
+             text-align: center;
+             font-size: 0.9rem;
+         }
+         .footer-nav {
+             margin-bottom: 1rem; /* Specific margin for footer spacing */
+         }
+         .contact-info {
+             background-color: #BBDDFF;
+             border: 1px solid #000066;
+             padding: 1rem;
+             margin-bottom: 1rem;
+         }
+
+     </style>
+ </head>
+ <body>
+     <header class="site-header container">
+         <div class="header-info">
+             North Head Sanctuary Foundation<br>
+             is working with Government agencies<br>
+             towards the establishment of<br>
+             <strong>Car-rang-gel Sanctuary</strong><br>
+             on North Head at the gateway of Sydney Harbour<br>
+             - a flagship for Australia's environmental resolve<br>
+             and a celebration of our natural and cultural heritage.
+         </div>
+         <div class="header-title">
+             <h1>Car-rang-gel Sanctuary on North Head, Sydney</h1>
+             <img src="../images/places/North_Head.jpg" alt="View of North Head, Sydney" width="500">
+         </div>
+     </header>
+
+     <nav class="main-nav">
+         <ul>
+             <li><a href="../index.html">Home</a></li>
+             <li><a href="../background/mission.htm">Mission</a></li>
+             <li><a href="../action/Activities.htm">Activities</a></li>
+             <li><a href="../background/Aboriginal.htm">Aboriginal Heritage</a></li>
+             <li><a href="../background/biodiversity.htm">Biodiversity</a></li>
+             <li><a href="../background/built.htm">Built Heritage</a></li>
+             <li><a href="../newsletters/index.htm">Newsletters</a></li>
+             <li><a href="../background/history.htm">History</a></li>
+             <li><a href="../background/progress.htm">Progress</a></li>
+             <li><a href="../nursery/nursery.htm">Nursery</a></li>
+             <li><a href="../action/Research.htm">Research</a></li>
+             <li><a href="../nursery/Volunteering.htm">Volunteering</a></li>
+             <li><a href="../join/membership.htm">Membership</a></li>
+         </ul>
+     </nav>
+
+     <main class="container">
+         <h1>North Head Sanctuary Foundation Nursery</h1>
+
+         <div class="content-grid">
+             <div class="index-list">
+                 <strong>On this page:</strong>
+                 <ol>
+                     <li><a href="#beginnings">Our beginnings</a></li>
+                     <li><a href="#what-we-do">What we do</a></li>
+                     <li><a href="#where-we-plant">Where we plant</a></li>
+                     <li><a href="#what-we-plant">What we're planting</a></li>
+                     <li><a href="#bandicoots">Providing protection for bandicoots</a></li>
+                     <li><a href="#join-us">Join us</a></li>
+                 </ol>
+             </div>
+             <figure>
+                 <img src="../images/places/nursery.jpg" alt="The plant nursery at North Head Sanctuary" width="860">
+                 <figcaption>Here is where we grow our plants, using seed and cuttings taken from North Head. We have an igloo for the seedlings and cuttings.</figcaption>
+             </figure>
+         </div>
+
+         <section id="beginnings">
+             <h2>Our Beginnings</h2>
+             <p>North Head Sanctuary Foundation agreed with the Sydney Harbour Federation Trust that a Business Plan for Car-rang-gel (North Head) Native Plant Nursery for propagating North Head species can be used for revegetation in the Sanctuary and nearby areas.</p>
+             <p>The Nursery Group is a part of the North Head Sanctuary Foundation. We are a group of volunteers, working with the Sydney Harbour Federation Trust to improve the grounds of the North Head Sanctuary. Much of the Sanctuary is Eastern Suburbs Banksia Scrub (ESBS), an endangered ecological community, and we aim to showcase in particular the plants that belong in the ESBS.</p>
+             <p>The group started by constructing the nursery itself, and began propagating in February 2009.</p>
+         </section>
+
+         <section id="what-we-do">
+             <h2>What We Do</h2>
+             <div class="flex-container">
+                 <ul class="task-list">
+                     <li>Collect seeds – we have a licence to collect within the North Head Sanctuary</li>
+                     <li>Prepare and grow the seed material</li>
+                     <li>Collect and grow cuttings – some plants are not easy to grow from seed</li>
+                     <li>Grow the material on until it is ready to be planted out</li>
+                     <li>Prepare areas for planting and plant in agreed areas</li>
+                     <li>Reuse our plastic tubes and pots</li>
+                 </ul>
+                 <ul class="task-list">
+                     <li>Weed as necessary</li>
+                     <li>Maintain our planted areas and the nursery</li>
+                     <li>Keep a record of what we do</li>
+                     <li>Tackle challenges with plants that we find difficult to propagate</li>
+                     <li>Enjoy working at North Head</li>
+                     <li>Get great satisfaction when plants that we have grown start to bloom</li>
+                 </ul>
+             </div>
+         </section>
+
+         <section id="where-we-plant">
+             <h2>Where We're Planting</h2>
+             <p>We source material from all over the Sydney Harbour Federation Trust North Head site, and plant in a number of locations. Check them out as you walk around the site:</p>
+             <div class="flex-container">
+                 <ul>
+                     <li>Opposite the nursery and semi-circle to the north of that area</li>
+                     <li>Old Oval – bandicoot habitat</li>
+                     <li>Beside and in front of the old gym</li>
+                     <li>North Fort</li>
+                 </ul>
+                 <ul>
+                     <li>Scenic Drive road edge</li>
+                     <li>Berm along Scenic Drive</li>
+                     <li>Entrance of North Fort Road (School Of Artillery)</li>
+                     <li>Area between Crossfit Gym and the Childcare Centre</li>
+                 </ul>
+             </div>
+             <h3>Progress of planting opposite Building 20 and the nursery</h3>
+             <div class="image-gallery">
+                 <figure>
+                     <img src="../images/Nursery/Before%20work%20started.jpg" alt="Area before planting began" width="500">
+                     <figcaption>The view opposite the nursery at the end of 2009 before planting began.</figcaption>
+                 </figure>
+                 <figure>
+                     <img src="../images/Nursery/Mulch%20arrives7%20Feb%202010.jpg" alt="Mulch being spread" width="500">
+                     <figcaption>The grass was poisoned, the mulch arrived and volunteers spread it around.</figcaption>
+                 </figure>
+                 <figure>
+                     <img src="../images/Nursery/Planting.jpg" alt="Volunteers planting seedlings" width="500">
+                     <figcaption>Volunteers planted seedlings that had been grown in the nursery.</figcaption>
+                 </figure>
+                 <figure>
+                     <img src="../images/Nursery/planted%20area.JPG" alt="Area after planting" width="500">
+                     <figcaption>By 2011, the area looked like this.</figcaption>
+                 </figure>
+             </div>
+              <figure>
+                 <img src="../images/places/8jun12.jpg" alt="Planted area in mid-2012" width="805">
+                 <figcaption>By mid 2012, the protective plastic surrounds were no longer needed and the trees were well over an adult's head.</figcaption>
+             </figure>
+              <figure>
+                 <img src="../images/places/20160501%20opposite%20building%2020.jpg" alt="Planted area in May 2016" width="800">
+                 <figcaption>Here is the same area in May 2016.</figcaption>
+             </figure>
+         </section>
+
+         <section id="what-we-plant">
+             <h2>What We're Planting</h2>
+             <ul class="plant-list">
+                 <li><i>Acacia myrtifolia</i></li> <li><i>Acacia suaveolens</i></li> <li><i>Acacia terminalis v. t</i></li> <li><i>Acacia ulicifolia</i></li> <li><i>Actinotus helianthi</i></li> <li><i>Actinotus minor</i></li> <li><i>Allocasuarina distyla</i></li> <li><i>Astroloma sp</i></li> <li><i>Baekea sp</i></li> <li><i>Banksia aemula</i></li> <li><i>Banksia ericifolia</i></li> <li><i>Banksia marginata</i></li> <li><i>Bauera rubioides</i></li> <li><i>Boronia sp</i></li> <li><i>Bossiaea heterophylla</i></li> <li><i>Bossiaea sp</i></li> <li><i>Callistemon citrinus</i></li> <li><i>Calytrix tetragona</i></li> <li><i>Conospermum sp</i></li> <li><i>Dampiera stricta</i></li> <li><i>Dianella caerulea</i></li> <li><i>Dichelachne micrantha</i></li> <li><i>Dichelachne sp</i></li> <li><i>Dillwynia retorta</i></li> <li><i>Epacris longiflora</i></li> <li><i>Epacris obtusifolia</i></li> <li><i>Eragrostis brownii</i></li> <li><i>Eucalyptus camfieldii</i></li> <li><i>Glycine clandestina</i></li> <li><i>Gonocarpus teucrioides</i></li> <li><i>Grevillea buxifolia</i></li> <li><i>Grevillea speciosa</i></li> <li><i>Haemodorum planifolium</i></li> <li><i>Hakea dactyloides</i></li> <li><i>Hakea gibbosa</i></li> <li><i>Hakea sericea</i></li> <li><i>Hardenbergia violaceae</i></li> <li><i>Helichrysum elatum</i></li> <li><i>Hibbertia dentata</i></li> <li><i>Hibbertia diffusa</i></li> <li><i>Hibbertia fasciculata</i></li> <li><i>Hibbertia linearis</i></li> <li><i>Hibbertia scandens</i></li> <li><i>Isolepis nodosa</i></li> <li><i>Isopogon anethifolius</i></li> <li><i>Lambertia formosa</i></li> <li><i>Lasiopetalum ferrugineum</i></li> <li><i>Lepidosperma laterale</i></li> <li><i>Lomandra longifolia</i></li> <li><i>Olearia tomentosa</i></li> <li><i>Patersonia sericea</i></li> <li><i>Persoonia lanceolata</i></li> <li><i>Petrophile pulchella</i></li> <li><i>Petrophile sessilis</i></li> <li><i>Philotheca salsolifolia</i></li> <li><i>Phyllota phylicoides</i></li> <li><i>Pimelea linifolia</i></li> <li><i>Pittosporum revolutum</i></li> <li><i>Pomax umbellata</i></li> <li><i>Pultanea sp</i></li> <li><i>Restionaceae sp</i></li> <li><i>Ricinocarpus pinifolius</i></li> <li><i>Themeda australis</i></li> <li><i>Woollsia pungens</i></li> <li><i>Xanthorrhoea sp</i></li> <li><i>Xanthosia pilosa</i></li>
+             </ul>
+         </section>
+
+         <section id="bandicoots">
+             <h2>Providing Protection for our Long-nosed Bandicoots</h2>
+             <div class="flex-container">
+                 <div>
+                     <img src="../images/fauna/bandicoot.jpg" alt="A long-nosed bandicoot." width="144" style="float: left; margin-right: 1rem;">
+                     <p>There is an endangered population of long-nosed bandicoots at North Head. We have been working with the Sydney Harbour Federation Trust and Australian Wildlife Conservancy to develop some “vegetative links” - small areas of dense foliage where the bandicoots can take refuge, forage and hopefully soon start to nest.</p>
+                     <p>Producing these links means that the bandicoots can forage in the mown grass and mulched areas and never be far from a safe haven. Our first area was planted early in 2010. By early 2012 the area was thriving, the protective mesh had long since been removed and the bandicoots were using the area for refuge and to forage.</p>
+                 </div>
+                 <figure>
+                     <img src="../images/Nursery/Bandicoot%20area.jpg" alt="Volunteers planting a bandicoot refuge area in 2010" width="500">
+                     <figcaption>Two volunteers in 2010 planting out the bandicoot refuge and putting a protective mesh around it.</figcaption>
+                 </figure>
+             </div>
+              <figure>
+                 <img src="../images/Nursery/bandicoot%20habitat.JPG" alt="Bandicoot refuge area in 2012" width="500">
+                 <figcaption>This is the same area in early 2012 with the Lomandra longifolia offering a hiding place for bandicoots.</figcaption>
+             </figure>
+         </section>
+
+         <section id="join-us">
+             <h2>Invitation to Join Us</h2>
+             <p>We, in the Nursery group together those who help with weeding and planting, enjoy what we are doing and can see that our work is having a positive impact in the surrounding environment.</p>
+             <p>If you would like to join us, call Jenny Wilson on 0414 735 350 or email <a href="mailto:jennyw@northheadsanctuaryfoundation.org.au">jennyw@northheadsanctuaryfoundation.org.au</a>.</p>
+             <p>We normally meet Tuesday and Friday mornings, but we sometimes have weekend sessions.</p>
+             <p>There is a small group of people working to produce information for visitors to North Head. <strong><a href="QRcodes/North%20Head%20Plants.htm">Click here</a></strong> to see their preparations for creating plant identification information for Eastern Suburbs Banksia Scrub species.</p>
+         </section>
+
+     </main>
+
+     <footer class="site-footer">
+         <div class="footer-nav">
+              <ul>
+                 <li><a href="../index.html">Home</a></li>
+                 <li><a href="../background/mission.htm">Mission</a></li>
+                 <li><a href="../action/Activities.htm">Activities</a></li>
+                 <li><a href="../background/Aboriginal.htm">Aboriginal Heritage</a></li>
+                 <li><a href="../background/biodiversity.htm">Biodiversity</a></li>
+                 <li><a href="../background/built.htm">Built Heritage</a></li>
+                 <li><a href="../newsletters/index.htm">Newsletters</a></li>
+                 <li><a href="../background/history.htm">History</a></li>
+                 <li><a href="../background/progress.htm">Progress</a></li>
+                 <li><a href="../nursery/nursery.htm">Nursery</a></li>
+                 <li><a href="../action/Research.htm">Research</a></li>
+                 <li><a href="../nursery/Volunteering.htm">Volunteering</a></li>
+                 <li><a href="../join/membership.htm">Membership</a></li>
+             </ul>
+         </div>
+         <div class="contact-info">
+             <strong>North Head Sanctuary Foundation, P.O.Box 506, Balgowlah, NSW 2093</strong><br>
+             Email: <a href="mailto:info@northheadsanctuaryfoundation.org.au">info@northheadsanctuaryfoundation.org.au</a>
+         </div>
+         <div class="container">
+             <p>This page was coded for the North Head Sanctuary Foundation by Judith Bennett.</p>
+             <p><a href="../background/copyright.htm">Copyright and Disclaimer</a></p>
+         </div>
+     </footer>
+
+ </body>
+ </html>

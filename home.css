@@ -1,0 +1,100 @@
+/* --- Main Content Layout (Grid) --- */
+.page-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr 1fr; /* Three-column layout */
+    gap: 1.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+main {
+    padding: 0 1rem;
+}
+
+/* --- Sidebar Styles --- */
+.sidebar {
+    background-color: var(--light-blue-bg);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Add this line back */
+}
+
+.sidebar h4 {
+    font-size: 1.2rem;
+    margin-top: 0;
+}
+
+.sidebar p, .sidebar a {
+    font-size: 0.9rem;
+}
+
+/* --- Specific Component Styles --- */
+.welcome-message h1, h2 {
+    text-align: center;
+    color: var(--header-text-color);
+}
+
+.info-highlight {
+    font-size: 1.2rem;
+    text-align: center;
+    color: var(--success-color);
+    font-weight: bold;
+    margin: 1.5rem 0;
+}
+
+.aunty-fran-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: left;
+}
+
+.aunty-fran-card img {
+    flex-shrink: 0;
+}
+
+a[href="ESBS.htm"] strong {
+    display: block;
+    margin-top: 0.5rem;
+}
+
+/* --- UNIFIED CAPTION STYLES --- */
+.image-caption-container {
+    margin: 0 auto 1rem auto;
+    padding: 0;
+    display: block;
+    text-align: center;
+}
+
+.image-caption-container img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.image-caption-container figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #333;
+}
+
+/* --- Image Gallery --- */
+.plant-gallery-wrapper {
+    padding: 1.5rem 0;
+}
+
+.plant-gallery {
+    text-align: center;
+}
+
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
