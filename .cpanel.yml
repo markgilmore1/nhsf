@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/northhea/public_html
+    - export DEPLOYPATH=/home/northhea/public_html_dev
     - /bin/cp -r * $DEPLOYPATH
