@@ -1,5 +1,8 @@
 ---
+# cPanel Git deployment for the NHSF website.
+# Syncs the whole repo tree to the dev document root, mirroring deletions.
+# Excludes VCS/editor metadata and source-only folders that must not be served.
 deployment:
   tasks:
-    - export DEPLOYPATH=/home2/northhea/public_html_dev
-    - /bin/cp -r * $DEPLOYPATH
+    - export DEPLOYPATH=/home2/northhea/public_html_dev/
+    - rsync -a --delete --exclude=.git/ --exclude=.gitignore --exclude=.claude/ --exclude=.cpanel.yml --exclude=.DS_Store --exclude=temp/ --exclude=archive/ --exclude=Template/ ./ $DEPLOYPATH
