@@ -5,4 +5,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home2/northhea/public_html_dev/
-    - rsync -a --delete --exclude=.git/ --exclude=.gitignore --exclude=.claude/ --exclude=.cpanel.yml --exclude=.DS_Store --exclude=temp/ --exclude=archive/ --exclude=Template/ --exclude=dev-server.py ./ $DEPLOYPATH
+    - rsync -a --delete --exclude=.git/ --exclude=.gitignore --exclude=.claude/ --exclude=.cpanel.yml --exclude=.DS_Store --exclude=temp/ --exclude=archive/ --exclude=Template/ ./ $DEPLOYPATH

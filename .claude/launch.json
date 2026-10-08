@@ -4,11 +4,8 @@
     {
       "name": "nhsf-static",
       "runtimeExecutable": "python3",
-      "runtimeArgs": [
-        "dev-server.py",
-        "8766"
-      ],
-      "port": 8766
+      "runtimeArgs": ["-m", "http.server", "8765"],
+      "port": 8765
     }
   ]
 }
